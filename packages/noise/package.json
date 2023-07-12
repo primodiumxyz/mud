@@ -8,6 +8,7 @@
   },
   "types": "ts/index.ts",
   "scripts": {
+    "prepare": "pnpm run build:wasm && pnpm run build:js",
     "build": "pnpm run build:wasm && pnpm run build:js",
     "build:js": "tsup",
     "build:wasm": "asc assembly/index.ts --target release",
