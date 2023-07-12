@@ -1,0 +1,22 @@
+
+> @latticexyz/noise@1.42.0 build /home/henry/projects/network-states/network-states/mud/packages/noise
+> pnpm run build:wasm && pnpm run build:js
+
+
+> @latticexyz/noise@1.42.0 build:wasm /home/henry/projects/network-states/network-states/mud/packages/noise
+> asc assembly/index.ts --target release
+
+
+> @latticexyz/noise@1.42.0 build:js /home/henry/projects/network-states/network-states/mud/packages/noise
+> tsup
+
+CLI Building entry: ts/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v6.7.0
+CLI Using tsup config: /home/henry/projects/network-states/network-states/mud/packages/noise/tsup.config.ts
+CLI Target: esnext
+CLI Cleaning output folder
+ESM Build start
+ESM dist/index.js     735.00 B
+ESM dist/index.js.map 2.80 KB
+ESM ⚡️ Build success in 21ms

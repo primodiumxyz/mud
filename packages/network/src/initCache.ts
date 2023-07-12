@@ -27,6 +27,8 @@ function initStore(db: IDBDatabase, storeId: string) {
 function initDb(dbId: string, stores: string[], version = VERSION, idb: IDBFactory = indexedDB) {
   const [resolve, reject, promise] = deferred<IDBDatabase>();
 
+  console.log("dbid: ", dbId);
+  console.log("idb ", idb);
   const request = idb.open(dbId, version);
 
   // Create store and index
