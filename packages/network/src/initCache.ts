@@ -1,7 +1,7 @@
 import { arrayToIterator, deferred, mergeIterators, transformIterator } from "@latticexyz/utils";
 
 const indexedDB = self.indexedDB;
-const VERSION = 2;
+const VERSION = 3;
 
 /**
  * Initialize an indexedDB store.
@@ -45,6 +45,7 @@ function initDb(dbId: string, stores: string[], version = VERSION, idb: IDBFacto
   };
 
   request.onerror = (error) => {
+    console.log(error);
     reject(new Error(JSON.stringify(error)));
   };
 
